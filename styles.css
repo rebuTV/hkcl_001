@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  column-gap: 15px;
+  column-gap: 10px;
 /*  background: #22222265; */
   height: auto;
   width: 600px;
