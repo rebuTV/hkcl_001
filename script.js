@@ -31,7 +31,7 @@ function updateProgress() {
   if (progress === 100) {
     progressBar.style.borderRadius = '0px';
   } else {
-    progressBar.style.borderRadius = '0px 0px 5px 5px'; // Reset border-radius if progress is less than 100%
+    progressBar.style.borderRadius = '5px 5px 0px 0px'; // Reset border-radius if progress is less than 100%
   }
 }
 
