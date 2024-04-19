@@ -68,8 +68,8 @@ body {
   color: #f3f3f3;
   font-size: 18px;
   mix-blend-mode: difference;
-  margin-left: -2px;
-  margin-bottom: 7px;
+  margin-left: -4px;
+  margin-bottom: 10px;
   transform: rotate(270deg);
 }
 
