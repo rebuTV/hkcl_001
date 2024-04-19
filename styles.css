@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&display=swap');
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.architects-daughter-regular {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 15px;
+/*  background: #22222265; */
+  height: auto;
+  width: 600px;
+  padding: 5px;
+  /* */
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 10px 35px 10px 35px;
+  color: #f3f3f3;
+}
+
+  .progress-bar {
+    width: 25px;
+    height: auto;
+    margin-top: 0px;
+    background-color: #333333;
+    margin-bottom: 0px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+  }
+
+  .progress {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    line-height: 20px;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+  }
+
+.progress-value {
+  color: #f3f3f3;
+  font-size: 16px;
+  mix-blend-mode: difference;
+  margin-left: -2px;
+  margin-bottom: 7px;
+  transform: rotate(270deg);
+}
+
+.checklist {
+  
+}
+
+.checklist-inner {
+  
+}
+
+.itemlist {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  row-gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.item label {
+  
+}
+
+.item input[type="checkbox"] {
+  display: none;
+  flex: 0 0 auto;
+  height: 30px;
+  width: 30px;
+}
+
+.item label {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://i.postimg.cc/6QxQNnWK/checkbox-unmarked.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.item input[type="checkbox"]:checked + label {
+  background-image: url('https://i.postimg.cc/2yykxxwQ/checkbox-marked.png');
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.item input[type="checkbox"]:checked + label + span {
+  opacity: 0.4; 
+  transition: 0.5s;
+  text-decoration: strikethrough;
+}
+
+.item span {
+  font-size: 16px;
+  transition: 0.5s;
+}
